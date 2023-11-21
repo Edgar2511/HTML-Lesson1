@@ -1,0 +1,113 @@
+/* Lesson 10
+@keyframes	 Specifies the animation code
+
+animation	A shorthand property for setting all the animation properties
+animation-delay	Specifies a delay for the start of an animation
+animation-direction	 Specifies whether an animation should be played forwards, backwards or in alternate cycles
+animation-direction: normal|reverse|alternate|alternate-reverse|
+animation-duration	Specifies how long time an animation should take to complete one cycle
+animation-duration: time|initial
+animation-iteration-count: number|infinite
+animation-fill-mode	Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)
+animation-fill-mode: none|forwards|backwards|both
+animation-iteration-count	Specifies the number of times an animation should be played
+animation-name	Specifies the name of the @keyframes animation
+animation-play-state	Specifies whether the animation is running or paused
+animation-play-state: paused|running|
+animation-timing-function	Specifies the speed curve of the animation
+animation-timing-function: linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n) */
+
+#container {
+	width: 100%;
+	height: 700px;
+	background-color: gold;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column-gap: 20px;
+	position: relative;
+}
+
+.cube {
+	width: 250px;
+	height: 250px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#cube1 {
+	background-color: black;
+	transition: transform 1s linear;
+	animation: cubeRotation 3s ease-in-out 3;
+	/* animation-delay: 1s; */
+	/* animation-duration: 0.5s; */
+	/* animation-iteration-count: 4; */
+	/* animation-fill-mode: backwards; */
+}
+#cube1:hover {
+	animation-play-state: paused;
+}
+#cube1:active {
+	animation-play-state: running;
+}
+#cube2 {
+	background-color: green;
+	transition: transform 1s linear;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: cube2 10s ease infinite;
+}
+
+#cube2:hover {
+	border-radius: 50%;
+}
+
+@keyframes cubeRotation {
+	0% {
+		/* transform: translateX(0%); */
+		transform: rotate(0deg);
+		background-color: aqua;
+	}
+	50% {
+		/* transform: translateX(100%); */
+		transform: rotate(360deg);
+		border-radius: 50%;
+		background-color: red;
+	}
+	100% {
+		/* transform: translateX(100%); */
+		transform: rotate(0deg);
+		border-radius: unset;
+		background-color: aqua;
+	}
+}
+@keyframes cube2 {
+	0% {
+		/* transform: translate(0, 0); */
+		top: 0px;
+		left: 0px;
+	}
+	25% {
+		top: 0;
+		left: calc(100% - 250px);
+		/* transform: translate(100%, 0); */
+	}
+	50% {
+		left: calc(100% - 250px);
+		top: calc(100% - 250px);
+		/* transform: translate(100%, 100%); */
+	}
+	80% {
+		top: calc(100% - 250px);
+		left: 0%;
+		/* transform: translate(0, 100%); */
+	}
+	100% {
+		bottom: 0;
+		left: 0;
+		/* transform: translate(0, 0); */
+	}
+}

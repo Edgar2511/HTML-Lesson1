@@ -1,0 +1,28 @@
+.parent {
+  position: relative;
+}
+
+.parent > .img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.pernt > .block {
+  display: none;
+  background-color: rgba(141, 140, 140, 0.425);
+}
+
+.middle {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.parent:hover > .block {
+  display: block;
+}
+
+.middle:hover {
+  background-color: red;
+}

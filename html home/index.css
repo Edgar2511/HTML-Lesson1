@@ -1,0 +1,30 @@
+#dotedId {
+  border: doted;
+  border-color: red;
+  border-width: 10px;
+  text-align: center;
+}
+.dashed {
+  border: dashed;
+  border-color: green;
+  border-width: 10px;
+  text-align: center;
+}
+.solid {
+  border: solid;
+}
+.double {
+  border: double;
+}
+.groove {
+  border: groove;
+}
+.ridge {
+  border: ridge;
+}
+.inset {
+  border: inset;
+}
+.outset {
+  border: outset;
+}

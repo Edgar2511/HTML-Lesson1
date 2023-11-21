@@ -1,0 +1,65 @@
+/* Lesson 6 Overflow, Float, Position
+
+Overflow
+
+overflow property only works for block elements with a specified height.
+
+overflow: visible|hidden|scroll|auto|initial|inherit;
+
+Float
+float: none|left|right|initial|inherit;
+clear: none|left|right|both|initial|inherit;
+
+
+Position
+position: static|absolute|fixed|relative|sticky| */
+/* 
+body {
+	overflow: hidden;
+} */
+
+/* #container {
+	width: 300px;
+	height: 500px;
+	background-color: gold;
+	overflow: visible;
+} */
+
+#container2 {
+	border: 5px solid black;
+	/* float: left; */
+	max-width: 400px;
+	/* left: 100px; */
+	/* right: 500px; */
+	/* bottom: 34px; */
+	position: sticky;
+	top: 20px;
+	left: 50%;
+	background-color: gold;
+}
+.cube {
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+}
+#hello {
+	clear: left;
+}
+#cube1 {
+	background-color: red;
+	/* float: right; */
+}
+#cube2 {
+	background-color: green;
+	/* float: left; */
+}
+#cube3 {
+	background-color: gold;
+	position: absolute;
+	right: 0;
+	/* top: 0; */
+	bottom: 25px;
+}
+#cube4 {
+	background-color: blue;
+}

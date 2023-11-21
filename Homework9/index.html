@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title> Homework 9 </title>
+</head>
+
+<body>
+        <div class="main_box">
+            <input type="checkbox" id="check">
+            <div class="btnone">
+                <label for="check">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+            <div class="sidebar_menu">
+                <div class="logo"><a href="#">Logo</a></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#">Jeans</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Skinny</a>
+                                    <a href="#">Relaxed</a>
+                                    <a href="#">Bootcut</a>
+                                    <a href="#">Staight</a>
+                                </div>
+                            </div>  
+                        </li>
+                        <li><a href="#">Jackets</a></li>
+                        <li><a href="#">Gymwear</a></li>
+                        <li><a href="#">Blazers</a></li>
+                        <li><a href="#">Shoes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <header id="header">
+            <p id="p1"> LOGO </p>
+
+        </header>
+
+        <main id="main">
+            <!-- Jeans -->
+            <section id="firstrow">
+                <article>
+                    <p class="maintext">Jeans</p>
+                </article>
+                <article id="icon">
+                    <img src="images/shoppingcart.png" alt="shopping" width="20px" style="margin-top:64px">
+                    <img src="images/img_87103.png" alt="search" width="20px" style="margin-right:20px">
+                </article>
+            </section>
+
+            <!-- First img  -->
+            <section id="imgtext">
+                <img id="firstimg" src="images/jeans.jpg">
+                <article id="textonimg">
+                    <h2 id="imgptext1">New arrivals </h2>
+                    <h2 id="imgptext2">COLLECTION 2016 </h2>
+                    <button id="shopnow"> SHOP NOW </button>
+                </article>
+            </section>
+            <!-- 8 items -->
+            <p id="itemptext"> 8 items</p>
+            <section>
+                <article id="itemarticle">
+                    <div class="itemdiv">
+                        <img src="images/jeans1.jpg" class="aboutimg">
+                        <div>
+                            <p>Ripped Skinny Jeans</p>
+                            <p class="jeansstyle"> $24.99 </p>
+                        </div>
+                    </div>
+                    <div class="itemdiv">
+                        <img src="images/jeans2.jpg" class="aboutimg">
+                        <p class="newsale">New</p>
+                        <!-- <div class="buynow">
+                            <button type="submit">Buy Now</button>
+                        </div> -->
+                        <div>
+                            <p>Mega Ripped Jeans</p>
+                            <p class="jeansstyle"> $19.99 </p>
+                        </div>
+                    </div>
+                    <div class="itemdiv">
+                        <img src="images/jeans3.jpg" class="aboutimg">
+                        <div>
+                            <p>Mega Ripped Jeans</p>
+                            <p class="jeansstyle"> $19.99 </p>
+                        </div>
+                    </div>
+                    <div class="itemdiv">
+                        <img src="images/jeans4.jpg" class="aboutimg">
+                        <div>
+                            <p>Washed Skinny Jeans</p>
+                            <p class="jeansstyle"> $20.50 </p>
+                        </div>
+                    </div>
+                    <div class="itemdiv">
+                        <img src="images/jeans2.jpg" class="aboutimg">
+                        <div>
+                            <p>Washed Skinny Jeans</p>
+                            <p class="jeansstyle"> $20.50 </p>
+                        </div>
+                    </div>
+                    <div class="itemdiv">
+                        <img src="images/jeans3.jpg" class="aboutimg">
+                        <div>
+                            <p>Vintage Skinny Jeans</p>
+                            <p class="jeansstyle"> $20.50 </p>
+                        </div>
+                    </div>
+                    <div class="itemdiv">
+                        <img src="images/jeans4.jpg" class="aboutimg">
+                        <p class="newsale">Sale</p>
+                        <!-- <div class="buynow">
+                            <button type="submit">Buy Now</button>
+                        </div> -->
+                        <div>
+                            <p>Ripped Skinny Jeans</p>
+                            <p class="jeansstyle"> $14.99 </p>
+                        </div>
+                    </div>
+                    <div class="itemdiv">
+                        <img src="images/jeans1.jpg" class="aboutimg">
+                        <div>
+                            <p>CEO & Founder</p>
+                            <p class="jeansstyle"> $14.99 </p>
+                        </div>
+                    </div>
+
+                </article>
+            </section>
+            <!-- Subscribe -->
+            <section id="subscribe">
+                <h2>Subscribe</h2>
+                <p>To get special offers and VIP treatment:</p>
+                <form>
+                    <input type="email" class="form-control" id="email" placeholder="Enter e-mail"><br>
+                    <button type="submit" class="btnsubscribe"> Subscribe </button>
+                </form>
+            </section>
+
+            <!-- Contact, About , Store -->
+            <section id="cas">
+                <article class="3column">
+                    <p class="contacttext1"> Contact </p>
+                    <p class="contacttext2">Questions ? Go ahead. </p>
+                    <form action="" id="contactform">
+                        <input type="text" class="form-control" id="name" placeholder="Name"><br>
+                        <input type="email" class="form-control" id="email" placeholder="Email"><br>
+                        <input type="text" class="form-control" id="subject" placeholder="Subject"><br>
+                        <input type="text" class="form-control" id="subject" placeholder="Massege"><br>
+                        <button type="submit" id="btncontact"> Send </button>
+                    </form>
+                </article>
+                <article class="threecolumn">
+                    <p class="contacttext1"> About </p>
+                    <div id="list">
+                        <a href="#" class="listrow">About us</a>
+                        <a href="#" class="listrow">We're hiring</a>
+                        <a href="#" class="listrow">Support</a>
+                        <a href="#" class="listrow">FInd store</a>
+                        <a href="#" class="listrow">Shipment</a>
+                        <a href="#" class="listrow">Payment</a>
+                        <a href="#" class="listrow">Gift card</a>
+                        <a href="#" class="listrow">Return</a>
+                        <a href="#" class="listrow">Help</a>
+                    </div>
+                </article>
+                <article class="Threecolumn">
+                    <p class="contacttext1"> Store </p>
+                    <div>
+                        <p>Company Name</p>
+                        <p>0044123123</p>
+                        <p>ex@mail.com</p>
+                        <p>We accept </p>
+                        <p>Amex </p>
+                        <p>Credit Card </p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <p id="pstyle"> Powered by <a id="lastlink" href="#">w3.css</a></p>
+        </footer>
+
+    </body>
+
+    </html>
